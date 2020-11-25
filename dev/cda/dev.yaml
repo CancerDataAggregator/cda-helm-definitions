@@ -1,0 +1,19 @@
+image:
+  tag: 0.0.3-SNAPSHOT
+
+service:
+  type: NodePort
+  port: 8080
+
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: cda-dev-ip
+  hosts:
+    - host: cda.cda-dev.broadinstitute.org
+      paths:
+        - /*
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local

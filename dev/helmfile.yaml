@@ -1,0 +1,17 @@
+---
+repositories:
+  - name: cda-helm
+    url: https://broadinstitute.github.io/cda-helm
+
+helmDefaults:
+  createNamespace: true
+
+# helm releases to be deployed
+releases:
+  - name: cda   # release name
+    namespace: dev   # target namespace
+    chart: cda-helm/cda   # chart name
+    version: 0.1.0
+    missingFileHandler: Warn
+    values:
+      - cda/dev.yaml
