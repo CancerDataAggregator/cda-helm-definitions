@@ -1,7 +1,7 @@
 ---
 repositories:
   - name: cda-helm
-    url: https://broadinstitute.github.io/cda-helm
+    url: https://cancerdataaggregator.github.io/cda-helm
 
 helmDefaults:
   createNamespace: true
