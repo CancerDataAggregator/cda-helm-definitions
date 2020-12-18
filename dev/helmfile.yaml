@@ -11,7 +11,7 @@ releases:
   - name: cda   # release name
     namespace: dev   # target namespace
     chart: cda-helm/cda   # chart name
-    version: 0.1.1
+    version: 0.1.2
     missingFileHandler: Warn
     values:
       - cda/dev.yaml
