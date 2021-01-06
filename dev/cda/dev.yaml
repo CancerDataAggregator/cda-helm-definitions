@@ -20,4 +20,4 @@ ingress:
 
 serviceAccount:
   annotations:
-    googleServiceAccount: bq-cda-sa@broad-cda-dev.iam.gserviceaccount.com
+    iam.gke.io/gcp-service-account: bq-cda-sa@broad-cda-dev.iam.gserviceaccount.com
