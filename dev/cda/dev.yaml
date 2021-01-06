@@ -17,3 +17,7 @@ ingress:
   tls:
     - hosts:
       - cda.cda-dev.broadinstitute.org
+
+serviceAccount:
+  annotations:
+    googleServiceAccount: bq-cda-sa@broad-cda-dev.iam.gserviceaccount.com
