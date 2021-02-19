@@ -14,9 +14,6 @@ ingress:
     - host: cda.cda-dev.broadinstitute.org
       paths:
         - /*
-  tls:
-    - hosts:
-      - cda.cda-dev.broadinstitute.org
 
 serviceAccount:
   annotations:
