@@ -1,5 +1,5 @@
 image:
-  tag: 0.0.8-SNAPSHOT
+  tag: 0.0.14
 
 service:
   type: NodePort
