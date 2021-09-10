@@ -1,5 +1,5 @@
 image:
-  tag: 0.0.19
+  tag: 0.0.20.4-SNAPSHOT
 
 service:
   type: NodePort
@@ -7,11 +7,11 @@ service:
 
 ingress:
   enabled: true
-  domainName: cda.cda-dev.broadinstitute.org
+  domainName: integration.cda-dev.broadinstitute.org
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: cda-dev-ip
+    kubernetes.io/ingress.global-static-ip-name: cda-int-ip
   hosts:
-    - host: cda.cda-dev.broadinstitute.org
+    - host: integration.cda-dev.broadinstitute.org
       paths:
         - /*
 
