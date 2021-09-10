@@ -1,0 +1,17 @@
+---
+repositories:
+  - name: cda-helm
+    url: https://cancerdataaggregator.github.io/cda-helm
+
+helmDefaults:
+  createNamespace: true
+
+# helm releases to be deployed
+releases:
+  - name: cda   # release name
+    namespace: integration   # target namespace
+    chart: cda-helm/cda-integration   # chart name
+    version: 0.1.7
+    missingFileHandler: Warn
+    values:
+      - cda/integration.yaml
