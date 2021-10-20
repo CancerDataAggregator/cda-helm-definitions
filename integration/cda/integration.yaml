@@ -1,15 +1,17 @@
 image:
-  tag: 0.0.20.4-SNAPSHOT
+  repository: gcr.io/broad-cda-dev/cda-integration
+  pullPolicy: Always
+  tag: 2.0.0
 
 service:
-  type: NodePort
+  type: LoadBalancer
   port: 8080
 
 ingress:
   enabled: true
-  domainName: integration.cda-dev.broadinstitute.org
+  domainName: staging.cda-dev.broadinstitute.org
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: cda-int-ip
+    kubernetes.io/ingress.global-static-ip-name: cda-staging-ip
   hosts:
     - host: integration.cda-dev.broadinstitute.org
       paths:
@@ -17,4 +19,4 @@ ingress:
 
 serviceAccount:
   annotations:
-    iam.gke.io/gcp-service-account: bq-cda-sa@broad-cda-dev.iam.gserviceaccount.com
+    iam.gke.io/gcp-service-account: cda-bq-service-user@broad-cda-dev.iam.gserviceaccount.com
