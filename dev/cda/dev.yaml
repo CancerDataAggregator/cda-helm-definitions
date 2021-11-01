@@ -5,6 +5,8 @@ service:
   type: NodePort
   port: 8080
 
+replicaCount: 6
+
 ingress:
   enabled: true
   domainName: cda.cda-dev.broadinstitute.org
