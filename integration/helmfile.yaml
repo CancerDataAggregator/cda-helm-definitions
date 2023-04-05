@@ -8,10 +8,10 @@ helmDefaults:
 
 # helm releases to be deployed
 releases:
-  - name: cda   # release name
-    namespace: dev  #target namespace
-    chart: cda-helm/cda   # chart name
-    version: 0.1.3
+  - name: cda # release name
+    namespace: dev #target namespace
+    chart: cda-helm/cda # chart name
+    version: 0.1.5
     missingFileHandler: Warn
     values:
       - cda/integration.yaml

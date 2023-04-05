@@ -1,7 +1,7 @@
 image:
   repository: us.gcr.io/broad-cda-dev/cda-integration
   pullPolicy: Always
-  tag: 3.0.5-RC
+  tag: 3.0.46
 
 service:
   type: LoadBalancer
